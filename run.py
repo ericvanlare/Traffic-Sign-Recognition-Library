@@ -41,6 +41,8 @@ def parse_args():
     return args
 
 def main():
+    d = '/'
+
     args = parse_args()
     latlng = get_latlng(args.city+', '+args.state)
     search(latlng)
@@ -51,7 +53,7 @@ def main():
     sign = 'not_sign'
     if is_sign.lower() == 'yes':
         sign = 'sign'
-    out = '/Users/evanlare/School/ELEN239/Traffic-Sign-Recognition-Library/img/' + sign + '/gsv' + str(datetime.datetime.now()).replace(' ', '').replace(':', '.') + '.jpg'
+    out = d + 'img/' + sign + '/gsv' + str(datetime.datetime.now()).replace(' ', '').replace(':', '.') + '.jpg'
     img.save(out)
 
 if __name__ == "__main__":
