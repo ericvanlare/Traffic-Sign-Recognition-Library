@@ -10,7 +10,7 @@ import google_streetview.api
 from geopy import geocoders
 
 def get_latlng(location):
-    gn = geocoders.GeoNames(username='evanlare')
+    gn = geocoders.GeoNames(username=geocoders_name)
     loc = random.choice(gn.geocode(location, exactly_one=False))
     return loc[1]
 
