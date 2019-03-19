@@ -1,5 +1,5 @@
 # Traffic-Sign-Recognition-Library
-A collection of utilities to promote growth in open source traffic sign recognition
+A collection of utilities to promote growth in open source traffic sign recognition. For now this collection is limited to just dataset generation, but in the future expect more utilities to help anyone get started with traffic sign recognition and detection.
 
 Prereqs:
  - Google API credentials. Add these to creds.py as `dev_key`
